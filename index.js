@@ -2,8 +2,7 @@ let obj1 = {
     firstName: "ali",
     inner_object:{
         age:20,
-        sex:"male",
-    },
+        
 };
 let key = 0;
 function detection(object) { 
