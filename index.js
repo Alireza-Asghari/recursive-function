@@ -1,22 +1,31 @@
-let obj1 = {
-    firstName: "ali",
-    inner_object:{
-        age:20,
-    }   
+let user ={
+    name:"ali",
+    age:20,
+    inner_obj:{
+        fullName: "alireza asghari",
+    },
 };
-let key = 0;
-function detection(object) { 
-    let len_1 = Object.keys(object);
-    let counter_2 = Object.values(object);
-    if (key <= len_1.length  && typeof counter_2[key] =="object"){
-        
-}else if(key <= len_1.length){
-    key++;
-    detection(len_1[key]);
+function detection(object){
+    if (object == "object"){
+        let arr = []
+        for (let key in object){
+            arr = Object.values(object);
+            let counter=0;
+            hold ={key:arr[counter]};
+            detection(arr[counter])
+        }
+        return hold
+    }else if(typeof object !==null || typeof object !==undefined){
+        counter++;
+        detection(arr[counter])
+    }
 }
-}
+/*let arr=[];
+for (let key in user){
+    arr = Object.values(user);
+    console.log(arr);
+}*/
 
 
- 
 
 
