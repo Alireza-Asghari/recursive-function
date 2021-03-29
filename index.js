@@ -20,11 +20,7 @@ function detection(object){
         detection(arr[counter])
     }
 }
-/*let arr=[];
-for (let key in user){
-    arr = Object.values(user);
-    console.log(arr);
-}*/
+
 
 
 
